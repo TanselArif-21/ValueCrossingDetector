@@ -214,6 +214,13 @@ class TestValueCrossingDetector(TestCase):
 
         self.assertEqual(zcd, 3)
 
+    def test_value_crossing_detector17(self):
+        """
+        A random test with non-integer value
+        """
+        zcd = value_crossing_detector([5, 1, 2, -3, 4, 5, 0, 0, 0, -1, 0], 0.5)
+
+        self.assertEqual(zcd, 3)
 
 class TestZeroCrossingDetector2D(TestCase):
     def test_zero_crossing_detector_2d1(self):

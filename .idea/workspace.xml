@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9199c0a-d18e-4483-8f31-8e59424a7674" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ValueCrossingDetector.py" beforeDir="false" afterPath="$PROJECT_DIR$/ValueCrossingDetector.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_zero_crossing_detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_zero_crossing_detector.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,20 +44,21 @@
     <session id="-122376144">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.23" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="3285" />
+          <entry key="py" value="3313" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="3285" />
+          <entry key="Python" value="3313" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -76,11 +75,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_zero_crossing_detector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="913">
+              <caret line="220" column="76" selection-start-line="220" selection-start-column="76" selection-end-line="220" selection-end-column="76" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -88,7 +87,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ValueCrossingDetector.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="551">
@@ -115,8 +114,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test_zero_crossing_detector.py" />
         <option value="$PROJECT_DIR$/ValueCrossingDetector.py" />
+        <option value="$PROJECT_DIR$/test_zero_crossing_detector.py" />
       </list>
     </option>
   </component>
@@ -294,9 +293,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.16 at 15h 22m 55s.xml">
-      <configuration name="pytest in test_zero_crossing_detector.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.16 at 15h 24m 16s.xml">
       <configuration name="pytest in test_zero_crossing_detector.py" configurationId="tests" />
     </history-entry>
@@ -322,6 +318,9 @@
       <configuration name="pytest in test_zero_crossing_detector.py" configurationId="tests" />
     </history-entry>
     <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.16 at 15h 30m 43s.xml">
+      <configuration name="pytest in test_zero_crossing_detector.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.16 at 15h 43m 45s.xml">
       <configuration name="pytest in test_zero_crossing_detector.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -364,22 +363,22 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_zero_crossing_detector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ValueCrossingDetector.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
           <caret line="132" column="73" selection-start-line="132" selection-start-column="73" selection-end-line="132" selection-end-column="73" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_zero_crossing_detector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="913">
+          <caret line="220" column="76" selection-start-line="220" selection-start-column="76" selection-end-line="220" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
