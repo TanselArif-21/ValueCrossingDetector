@@ -1,6 +1,6 @@
 from unittest import TestCase
 from ValueCrossingDetector import zero_crossing_detector, value_crossing_detector, zero_crossing_detector_2d,\
-value_crossing_detector_2d
+    value_crossing_detector_2d
 
 
 class TestZeroCrossingDetector(TestCase):
@@ -36,7 +36,7 @@ class TestZeroCrossingDetector(TestCase):
 
         self.assertEqual(zcd, 3)
 
-    def test_zero_crossing_detector4(self):
+    def test_zero_crossing_detector5(self):
         """
         Test the case where 3 crossings have occurred but it lingers on zero (i.e. not crossing)
         """
@@ -44,7 +44,7 @@ class TestZeroCrossingDetector(TestCase):
 
         self.assertEqual(zcd, 3)
 
-    def test_zero_crossing_detector5(self):
+    def test_zero_crossing_detector6(self):
         """
         Test the case where 3 crossings have occurred, it lingers at zero and goes back (i.e. hasn't crossed)
         """
@@ -52,13 +52,29 @@ class TestZeroCrossingDetector(TestCase):
 
         self.assertEqual(zcd, 3)
 
-    def test_zero_crossing_detector6(self):
+    def test_zero_crossing_detector7(self):
         """
         Test the case where 3 crossings occur, it lingers at zero and then crosses
         """
         zcd = zero_crossing_detector([5, 4, 3, 2, 3, -5, 2, -7, 0, 0, 0, -1, 0, 1, 1, 1])
 
         self.assertEqual(zcd, 4)
+
+    def test_zero_crossing_detector8(self):
+        """
+        Test the most basic case of a straight line trajectory but starting with a negative
+        """
+        zcd = zero_crossing_detector([-5, 4, 3, 2, 1, 0, -1, -2, -3, -4, -5])
+
+        self.assertEqual(zcd, 2)
+
+    def test_zero_crossing_detector9(self):
+        """
+        Test the most basic case of a straight line trajectory but starting with a zero
+        """
+        zcd = zero_crossing_detector([0, 4, 3, 2, 1, 0, -1, -2, -3, -4, -5])
+
+        self.assertEqual(zcd, 1)
 
     def test_zero_crossing_detector(self):
         """
@@ -78,7 +94,7 @@ class TestValueCrossingDetector(TestCase):
 
         self.assertEqual(zcd, 1)
 
-    def test_value_crossing_detector1(self):
+    def test_value_crossing_detector2(self):
         """
         Test the case where no crossing has occurred
         """
@@ -86,7 +102,7 @@ class TestValueCrossingDetector(TestCase):
 
         self.assertEqual(zcd, 0)
 
-    def test_value_crossing_detector1(self):
+    def test_value_crossing_detector3(self):
         """
         Test the case where 1 crossing has occurred
         """
@@ -94,7 +110,7 @@ class TestValueCrossingDetector(TestCase):
 
         self.assertEqual(zcd, 1)
 
-    def test_value_crossing_detector1(self):
+    def test_value_crossing_detector4(self):
         """
         Test the case where 3 crossing have occurred
         """
@@ -102,7 +118,7 @@ class TestValueCrossingDetector(TestCase):
 
         self.assertEqual(zcd, 3)
 
-    def test_value_crossing_detector1(self):
+    def test_value_crossing_detector5(self):
         """
         Test the case where 3 crossings have occurred but it lingers on zero (i.e. not crossing)
         """
@@ -110,7 +126,7 @@ class TestValueCrossingDetector(TestCase):
 
         self.assertEqual(zcd, 3)
 
-    def test_value_crossing_detector1(self):
+    def test_value_crossing_detector6(self):
         """
         Test the case where 3 crossings have occurred, it lingers at zero and goes back (i.e. hasn't crossed)
         """
@@ -118,7 +134,7 @@ class TestValueCrossingDetector(TestCase):
 
         self.assertEqual(zcd, 3)
 
-    def test_value_crossing_detector1(self):
+    def test_value_crossing_detector7(self):
         """
         Test the case where 3 crossings occur, it lingers at zero and then crosses
         """
@@ -126,7 +142,7 @@ class TestValueCrossingDetector(TestCase):
 
         self.assertEqual(zcd, 4)
 
-    def test_value_crossing_detector1(self):
+    def test_value_crossing_detector8(self):
         """
         A random test
         """
@@ -134,7 +150,7 @@ class TestValueCrossingDetector(TestCase):
 
         self.assertEqual(zcd, 3)
 
-    def test_value_crossing_detector1(self):
+    def test_value_crossing_detector9(self):
         """
         Test the most basic case of a straight line trajectory
         """
@@ -142,15 +158,15 @@ class TestValueCrossingDetector(TestCase):
 
         self.assertEqual(zcd, 0)
 
-    def test_value_crossing_detector1(self):
+    def test_value_crossing_detector10(self):
         """
         Test the case where one crossing has occurred
         """
         zcd = value_crossing_detector([5, 4, 3, 2, 3], 3)
 
-        self.assertEqual(zcd, 3)
+        self.assertEqual(zcd, 1)
 
-    def test_value_crossing_detector1(self):
+    def test_value_crossing_detector11(self):
         """
         Test the case where 1 crossing has occurred
         """
@@ -158,7 +174,7 @@ class TestValueCrossingDetector(TestCase):
 
         self.assertEqual(zcd, 1)
 
-    def test_value_crossing_detector1(self):
+    def test_value_crossing_detector12(self):
         """
         Test the case where 3 crossing have occurred
         """
@@ -166,7 +182,7 @@ class TestValueCrossingDetector(TestCase):
 
         self.assertEqual(zcd, 3)
 
-    def test_value_crossing_detector1(self):
+    def test_value_crossing_detector13(self):
         """
         Test the case where 1 crossings have occurred but it hits the value (i.e. not crossing)
         """
@@ -174,15 +190,15 @@ class TestValueCrossingDetector(TestCase):
 
         self.assertEqual(zcd, 1)
 
-    def test_value_crossing_detector1(self):
+    def test_value_crossing_detector14(self):
         """
         Test the case where 2 crossings have occurred, it lingers at zero
         """
         zcd = value_crossing_detector([5, 4, 3, 2, 3, -5, 2, -7, 0, 0, 0, -1, 0], -6)
 
-        self.assertEqual(zcd, 3)
+        self.assertEqual(zcd, 2)
 
-    def test_value_crossing_detector1(self):
+    def test_value_crossing_detector15(self):
         """
         Test the case where 4 crossings occur, it lingers at zero
         """
@@ -190,7 +206,7 @@ class TestValueCrossingDetector(TestCase):
 
         self.assertEqual(zcd, 4)
 
-    def test_value_crossing_detector1(self):
+    def test_value_crossing_detector16(self):
         """
         A random test
         """

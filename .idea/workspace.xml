@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9199c0a-d18e-4483-8f31-8e59424a7674" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ValueCrossingDetector.py" beforeDir="false" afterPath="$PROJECT_DIR$/ValueCrossingDetector.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_zero_crossing_detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_zero_crossing_detector.py" afterDir="false" />
@@ -47,19 +46,20 @@
     <session id="-122376144">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2658" />
+          <entry key="py" value="3285" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2658" />
+          <entry key="Python" value="3285" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -76,11 +76,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_zero_crossing_detector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="364" column="32" lean-forward="true" selection-start-line="364" selection-start-column="32" selection-end-line="364" selection-end-column="32" />
+            <state relative-caret-position="391">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -88,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ValueCrossingDetector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+            <state relative-caret-position="551">
+              <caret line="132" column="73" selection-start-line="132" selection-start-column="73" selection-end-line="132" selection-end-column="73" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -115,16 +115,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ValueCrossingDetector.py" />
         <option value="$PROJECT_DIR$/test_zero_crossing_detector.py" />
+        <option value="$PROJECT_DIR$/ValueCrossingDetector.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="85" />
-    <option name="y" value="25" />
-    <option name="width" value="1750" />
-    <option name="height" value="970" />
+    <option name="x" value="-1392" />
+    <option name="y" value="-26" />
+    <option name="width" value="1400" />
+    <option name="height" value="776" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -204,7 +204,52 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_zero_crossing_detector.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_zero_crossing_detector.TestValueCrossingDetector" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="ValueCrossingDetection" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_zero_crossing_detector.TestValueCrossingDetector&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_zero_crossing_detector.TestValueCrossingDetector.test_value_crossing_detector1" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="ValueCrossingDetection" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;TestValueCrossingDetector.test_value_crossing_detector1&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_zero_crossing_detector.TestValueCrossingDetector.test_value_crossing_detector1&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_zero_crossing_detector.TestValueCrossingDetector.test_value_crossing_detector8" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="ValueCrossingDetection" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_zero_crossing_detector.TestValueCrossingDetector.test_value_crossing_detector8&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_zero_crossing_detector.py" type="tests" factoryName="py.test" nameIsGenerated="true">
       <module name="ValueCrossingDetection" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -220,13 +265,18 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.ValueCrossingDetector" />
       <item itemvalue="Python tests.pytest in test_zero_crossing_detector.py" />
+      <item itemvalue="Python tests.pytest for test_zero_crossing_detector.TestValueCrossingDetector" />
+      <item itemvalue="Python tests.pytest for test_zero_crossing_detector.TestValueCrossingDetector.test_value_crossing_detector1" />
+      <item itemvalue="Python tests.pytest for test_zero_crossing_detector.TestValueCrossingDetector.test_value_crossing_detector8" />
+      <item itemvalue="Python.ValueCrossingDetector" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test_zero_crossing_detector.py" />
         <item itemvalue="Python.ValueCrossingDetector" />
+        <item itemvalue="Python tests.pytest for test_zero_crossing_detector.TestValueCrossingDetector" />
+        <item itemvalue="Python tests.pytest for test_zero_crossing_detector.TestValueCrossingDetector.test_value_crossing_detector1" />
+        <item itemvalue="Python tests.pytest for test_zero_crossing_detector.TestValueCrossingDetector.test_value_crossing_detector8" />
       </list>
     </recent_temporary>
   </component>
@@ -244,47 +294,47 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.15 at 15h 02m 04s.xml">
+    <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.16 at 15h 22m 55s.xml">
       <configuration name="pytest in test_zero_crossing_detector.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.15 at 15h 05m 17s.xml">
+    <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.16 at 15h 24m 16s.xml">
       <configuration name="pytest in test_zero_crossing_detector.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.15 at 15h 07m 01s.xml">
+    <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.16 at 15h 27m 00s.xml">
       <configuration name="pytest in test_zero_crossing_detector.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.15 at 15h 08m 20s.xml">
+    <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.16 at 15h 27m 27s.xml">
       <configuration name="pytest in test_zero_crossing_detector.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.15 at 15h 09m 30s.xml">
+    <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.16 at 15h 27m 49s.xml">
       <configuration name="pytest in test_zero_crossing_detector.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.15 at 16h 05m 49s.xml">
+    <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.16 at 15h 29m 07s.xml">
       <configuration name="pytest in test_zero_crossing_detector.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.15 at 16h 07m 13s.xml">
+    <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.16 at 15h 29m 30s.xml">
       <configuration name="pytest in test_zero_crossing_detector.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.15 at 16h 09m 34s.xml">
+    <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.16 at 15h 29m 43s.xml">
       <configuration name="pytest in test_zero_crossing_detector.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.15 at 16h 14m 09s.xml">
+    <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.16 at 15h 30m 23s.xml">
       <configuration name="pytest in test_zero_crossing_detector.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.15 at 17h 19m 44s.xml">
+    <history-entry file="pytest_in_test_zero_crossing_detector_py - 2018.11.16 at 15h 30m 43s.xml">
       <configuration name="pytest in test_zero_crossing_detector.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2247191" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29929078" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29826465" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -302,23 +352,34 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test_zero_crossing_detector.py</url>
+          <line>100</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ValueCrossingDetector.py">
+    <entry file="file://$PROJECT_DIR$/test_zero_crossing_detector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+        <state relative-caret-position="391">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_zero_crossing_detector.py">
+    <entry file="file://$PROJECT_DIR$/ValueCrossingDetector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="364" column="32" lean-forward="true" selection-start-line="364" selection-start-column="32" selection-end-line="364" selection-end-column="32" />
+        <state relative-caret-position="551">
+          <caret line="132" column="73" selection-start-line="132" selection-start-column="73" selection-end-line="132" selection-end-column="73" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>

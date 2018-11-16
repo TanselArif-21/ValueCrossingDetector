@@ -1,41 +1,57 @@
 import numpy as np
 import math
 
-def zero_crossing_detector(x):
+
+def zero_crossing_detector(signal):
     """
     A function to count the number of times a list of floats crosses the
     value x = 0
-    :param x: A list of floats representing movement in 1-D space
+    :param signal: A list of floats representing movement in 1-D space
     :return: An integer representing the number of times the trajectory
     has crossed x = 0
     """
 
     # This holds information about the positivity of the current trajectory
-    pos = True
+    pos = -1
 
     # This holds information about the number of times a crossing event has occurred
     count = 0
 
-    if x.pop(0) >= 0:
-        pos = True
+    # Let's set the pos value depending on the first element
+    first_value = signal.pop(0)
+
+    if first_value > 0:
+        pos = 1
+    elif first_value == 0:
+        pos = 0
 
     # Loop through x and note the number of times the sign has changed
-    for i in x:
-        if i < 0 and pos:
+    for i in signal:
+        # If i < 0 and pos > 0 then we are changing sign from positive to negative
+        # If i > 0 and pos < 0 then we are changing sign from negative to positive
+        # If i < 0 and pos == 0 then we haven't actually crossed zero
+        # If i > 0 and pos == 0 then we haven't actually crossed zero
+        if (i < 0) and (pos > 0):
             count += 1
-            pos = False
-        elif i > 0 and not pos:
+            pos = -1
+        elif (i > 0) and (pos < 0):
             count += 1
-            pos = True
+            pos = 1
+        else:
+            if pos == 0:
+                if i < 0:
+                    pos = -1
+                elif i > 0:
+                    pos = 1
 
     return count
 
 
-def zero_crossing_detector_2d(v):
+def zero_crossing_detector_2d(signal2d):
     """
     A function to count the number of times a list of (x,y) tuples of floats crosses the
     plane y = 0. This is nothing but checking whether the y coordinate has crossed 0
-    :param v: A list of (x,y) tuples of floats representing movement in 2-D space
+    :param signal2d: A list of (x,y) tuples of floats representing movement in 2-D space
     :return: An integer representing the number of times the trajectory
     has crossed y = 0
     """
@@ -47,7 +63,7 @@ def zero_crossing_detector_2d(v):
     count = 0
 
     # Get the y coordinates
-    x = [j for (i, j) in v]
+    x = [j for (i, j) in signal2d]
 
     if x.pop(0) >= 0:
         pos = True
@@ -64,26 +80,26 @@ def zero_crossing_detector_2d(v):
     return count
 
 
-def value_crossing_detector(x, a):
+def value_crossing_detector(signal, value):
     """
     A function to count the number of times a list of floats crosses
     the value x = a where a is a user defined value
-    :param x: A list of floats representing movement in 1-D space
-    :param a: A user specified value to check whether it is crossed by
+    :param signal: A list of floats representing movement in 1-D space
+    :param value: A user specified value to check whether it is crossed by
     the trajectory
     :return: An integer representing the number of times the trajectory
     has crossed x = a
     """
 
-    return zero_crossing_detector(list(map(lambda i: i-a, x)))
+    return zero_crossing_detector(list(map(lambda i: i-value, signal)))
 
 
-def value_crossing_detector_2d(v, a):
+def value_crossing_detector_2d(signal2d, value):
     """
     A function to count the number of times a list of (x,y) tuples of floats crosses
     the line defined by the two user given tuples (x1,y1) and (x2,y2)
-    :param v: A list of (x,y) tuples of floats representing movement in 2-D space
-    :param a: A user specified list of two (x,y) tuples check whether it is crossed by
+    :param signal2d: A list of (x,y) tuples of floats representing movement in 2-D space
+    :param value: A user specified list of two (x,y) tuples check whether it is crossed by
     the trajectory
     :return: An integer representing the number of times the trajectory
     has crossed y = a
@@ -93,9 +109,9 @@ def value_crossing_detector_2d(v, a):
     #         Let a = [(x1,y1),(x2,y2)]. Then user defined line is
     #         y = ((y2-y1)/(x2-x1)) * x1 + (y1*x2-y2*x1)/(x2-x1)
     #         So we need to shift along the y coordinate by -(y1*(1+x1) - y2*x1)/(x2-x1)
-    y_shift = -(a[0][1]*a[1][0] - a[1][1]*a[0][0])/(a[1][0]-a[0][0])
-    y_shifted = [[i, j + y_shift] for (i, j) in v]
-    a_shifted = [[a[0][0], a[0][1] + y_shift], [a[1][0], a[1][1] + y_shift]]
+    y_shift = -(value[0][1]*value[1][0] - value[1][1]*value[0][0])/(value[1][0]-value[0][0])
+    y_shifted = [[i, j + y_shift] for (i, j) in signal2d]
+    a_shifted = [[value[0][0], value[0][1] + y_shift], [value[1][0], value[1][1] + y_shift]]
 
     # Step 2: Calculate the angle between the shifted user defined line and the x-axis
     #         Cos(angle) = (u.w)/(|u||w|) for two general vectors u, v passing through the origin
@@ -127,10 +143,3 @@ def value_crossing_detector_2d(v, a):
 
     # Step 4: Use the already existing zero crossing detector to check for crossing the x-axis
     return zero_crossing_detector_2d(y_shifted_rotated)
-
-
-z = [(0, 0), (1, 0), (1, -2), (2, -2), (3, -2), (3, -1), (4, -1), (5, -2), (6, -1), (6, 3), (8, 3), (10, 1), (7, 1),
-     (3, 4)]
-a = [(0, -2), (10, 3)]
-
-print(value_crossing_detector_2d(z, a))
